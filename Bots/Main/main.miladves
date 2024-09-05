@@ -1,0 +1,14 @@
+const { Miladves } = require('../../Global/Structures/Default.Clients.js');
+let client = global.client = new Miladves({
+    token: "MTAwMDU0Dc4NgzNczNTAwM.zLgj4FcuKRWyJgcuct4BqAmXJsAuFCatnmrOTsg",
+    prefix: ["."],
+    owners: ["327236967265861633"],
+    MongoURI: "mongodb://127.0.0.1/Miladves",
+    _dirname: "Main"
+});
+
+client.fetchCommands(true, true);
+client.fetchEvents()
+client.connect()
+
+
